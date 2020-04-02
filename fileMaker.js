@@ -24,7 +24,9 @@ ${data.projectDescription}
 ${tableOfContents.map(item => `- [${item}](#${item})  \n`).join('')}
 
 ## Installation
-\`\`\`${data.installation}\`\`\`
+\`\`\`
+${data.installation}
+\`\`\`
 
 ## Usage
 ${data.usage}
@@ -36,7 +38,9 @@ ${svg}
 ${data.contribution}
 
 ### Testing
-\`\`\`${data.testing}\`\`\`
+\`\`\`
+${data.testing}
+\`\`\`
 
 ### Questions
 ${data.questions}
