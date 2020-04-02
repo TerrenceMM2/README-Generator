@@ -7,7 +7,7 @@ exports.generateReadme = async (data) => {
  
     const format = {
         text: [`${data.license}`, 'passed'],
-        color: 'informational',
+        color: '#20c997',
         template: 'flat',
     }
  
