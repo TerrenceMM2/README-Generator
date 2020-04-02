@@ -1,7 +1,18 @@
+require('dotenv').config()
 const axios = require("axios");
 
-exports.getGitHub = (user) => {
-    axios.get(`https://api.github.com/users/${user}`)
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error))
+exports.getGitHub = async (user) => {
+    try {
+        const response = await axios({
+            method: "get",
+            url: `https://api.github.com/users/${user}`,
+            headers: {"Authorization": `token ${process.env.GH_TOKEN}`}
+        })
+        const data = response.data;
+        return data;
+    }
+    catch (error) {
+        console.error(error)
+    }
+    
 };
