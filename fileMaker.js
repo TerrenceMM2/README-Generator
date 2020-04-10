@@ -6,14 +6,16 @@ exports.generateReadme = async (data) => {
     const bf = new BadgeFactory()
  
     const format = {
-        text: [`${data.license}`, 'passed'],
+        text: ['License', `${data.license}`],
         color: '#20c997',
-        template: 'flat',
+        template: 'for-the-badge',
     }
  
     const svg = bf.create(format)
 
     const tableOfContents = data.tableOfContents.split(", ");
+    const usage = data.usage.split(", ");
+    const contribution = data.contribution.split(", ");
 
     const fileData =
 `
@@ -29,13 +31,13 @@ ${data.installation}
 \`\`\`
 
 ## Usage
-${data.usage}
+${usage.map((step, i) => `${(i + 1)}. ${step}\n`).join('')}
 
 ### License
 ${svg}
 
 ### Contributing
-${data.contribution}
+${contribution.map((step, i) => `${(i + 1)}. ${step}\n`).join('')}
 
 ### Testing
 \`\`\`

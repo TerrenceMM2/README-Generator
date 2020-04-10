@@ -47,7 +47,7 @@ const userInput = async () => {
         },
         {
             type: "input",
-            message: "Usage Information",
+            message: "Usage Information (Separate multiple steps with a comma)",
             name: "usage"
         },
         {
@@ -58,7 +58,7 @@ const userInput = async () => {
         },
         {
             type: "input",
-            message: "Contribution Information",
+            message: "Contribution Information (Separate multiple steps with a comma)",
             name: "contribution"
         },
         {
