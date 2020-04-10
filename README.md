@@ -19,8 +19,8 @@ GH_TOKEN=<Your_GitHub_Token>
 
 ## Instructions
 1. Start the application by running `node index` or `npm start`.
-2. Answer all the provided question.
-3. After all the questions have been answer, a generated, template readme called `New-README.md` will be created.
+2. Answer all the provided questions.
+3. After all the questions have been answered, a generated, template readme called `New-README.md` will be created.
 
 ### Demo
 ![Using the README-Generator Application](../media/readme_generator.gif?raw=true)
