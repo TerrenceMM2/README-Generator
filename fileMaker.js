@@ -48,11 +48,11 @@ ${data.questions}
 ### Author
 <img src="${data.ghData.avatar_url}" style="width: 40px; height: 40px; border-radius: 50%;" alt="Github Profile Picture">\n
 **${data.ghData.name}**\n
-- Email: [${data.ghData.email}](${data.ghData.email})\n
-- Portfolio: [${data.ghData.blog}](${data.ghData.blog})\n
+- 📧 Email: [${data.ghData.email}](${data.ghData.email})\n
+- 💻 Portfolio: [${data.ghData.blog}](${data.ghData.blog})\n
 `
     fs.writeFile("New-README.md", fileData, err => {
         if (err) throw err;
-        console.log("README.md generated!")
+        console.log("\nNew-README.md generated!")
     });
 };

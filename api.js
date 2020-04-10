@@ -12,7 +12,7 @@ exports.getGitHub = async (user) => {
         return data;
     }
     catch (error) {
-        console.error(error)
+        console.log(error.response.data)
     }
     
 };
