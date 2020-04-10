@@ -39,7 +39,7 @@ To get started ...
 
 **Step 3** - 🔃 Create a new pull request using [https://github.com/TerrenceMM2/Liri-Bot/compare](https://github.com/TerrenceMM2/Liri-Bot/compare)
 
-### Build With
+### Built With
 
 1. [NodeJS](https://nodejs.org/en/)
 2. [FS](https://nodejs.dev/the-nodejs-fs-module)
