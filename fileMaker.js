@@ -1,17 +1,6 @@
 const fs = require("fs");
-const { BadgeFactory } = require('gh-badges');
 
 exports.generateReadme = async (data) => {
-
-    const bf = new BadgeFactory()
- 
-    const format = {
-        text: ['License', `${data.license}`],
-        color: '#20c997',
-        template: 'for-the-badge',
-    }
- 
-    const svg = bf.create(format)
 
     const tableOfContents = data.tableOfContents.split(", ");
     const usage = data.usage.split(", ");
@@ -34,7 +23,7 @@ ${data.installation}
 ${usage.map((step, i) => `${(i + 1)}. ${step}\n`).join('')}
 
 ### License
-${svg}
+![License Badge](https://img.shields.io/static/v1?style=for-the-badge&logo=open-source-initiative&label=License&message=${data.license}&color=#3DA639)
 
 ### Contributing
 ${contribution.map((step, i) => `${(i + 1)}. ${step}\n`).join('')}
@@ -43,9 +32,6 @@ ${contribution.map((step, i) => `${(i + 1)}. ${step}\n`).join('')}
 \`\`\`
 ${data.testing}
 \`\`\`
-
-### Questions
-${data.questions}
 
 ### Author
 <img src="${data.ghData.avatar_url}" style="width: 40px; height: 40px; border-radius: 50%;" alt="Github Profile Picture">\n

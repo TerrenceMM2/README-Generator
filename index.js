@@ -66,12 +66,7 @@ const userInput = async () => {
             message: "Testing Information",
             name: "testing",
             default: "npm test"
-        },
-        {
-            type: "input",
-            message: "Question Information",
-            name: "questions"
-        },
+        }
     ]);
 
     const confirm = await inquirer.prompt([{
@@ -88,7 +83,6 @@ Usage: ${data.usage}
 License: ${data.license}
 Contribution: ${data.contribution}
 Testing: ${data.testing}
-Questions: ${data.questions}
 **********************************************************************************
 Is this correct?`,
         name: "confirmed",
