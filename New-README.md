@@ -35,7 +35,7 @@ npm test
 ```
 
 ### Author
-<img src="https://avatars1.githubusercontent.com/u/25600473?v=4" style="width: 40px; height: 40px; border-radius: 50%;" alt="Github Profile Picture">
+<img width="40" height="40" style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/25600473?v=4" alt="Github Profile Picture">
 
 **Terrence Mahnken**
 

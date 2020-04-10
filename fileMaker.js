@@ -34,7 +34,7 @@ ${data.testing}
 \`\`\`
 
 ### Author
-<img src="${data.ghData.avatar_url}" style="width: 40px; height: 40px; border-radius: 50%;" alt="Github Profile Picture">\n
+<img width="40" height="40" style="border-radius: 50%;" src="${data.ghData.avatar_url}" alt="Github Profile Picture">\n
 **${data.ghData.name}**\n
 - 📧 Email: [${data.ghData.email}](${data.ghData.email})\n
 - 💻 Portfolio: [${data.ghData.blog}](${data.ghData.blog})\n
